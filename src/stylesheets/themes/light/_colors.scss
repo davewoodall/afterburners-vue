@@ -1,6 +1,5 @@
 .light-theme {
   background: $gray;
-  @include page;
   .a {
     color: $blue;
     &.router-link-exact-active {

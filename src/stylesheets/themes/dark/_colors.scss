@@ -1,7 +1,6 @@
 .dark-theme {
   background: $black;
   color: $warn;
-  @include page;
 
   .a {
     color: $white;

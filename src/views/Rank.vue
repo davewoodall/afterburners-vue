@@ -1,8 +1,8 @@
 <template>
   <div class="rank">
     <div class="container">
-      <box>
-        <h1 class="h1">RANK!</h1>
+      <box class="skinny">
+        <h1 class="h1">Rankings</h1>
         <rank />
       </box>
     </div>
@@ -17,4 +17,11 @@ export default {
   }
 };
 </script>
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+.skinny {
+  max-width: 600px !important;
+  .h1 {
+    margin-bottom: $size4;
+  }
+}
+</style>

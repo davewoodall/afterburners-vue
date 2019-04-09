@@ -8,10 +8,18 @@
       |
       <span>
         <a
-          href="http://www.github.com/davewoodall/logger-vue"
+          href="http://www.github.com/davewoodall/afterburners-vue"
           target="_blank"
           class="a"
-          >view repo</a
+          >view client repo</a
+        > </span
+      >|
+      <span>
+        <a
+          href="http://www.github.com/davewoodall/afterburners2"
+          target="_blank"
+          class="a"
+          >view API repo</a
         >
       </span>
     </div>

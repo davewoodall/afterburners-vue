@@ -1,11 +1,22 @@
 import API from "@/api/base";
-const baseUrl = "http://localhost:3000/v1/ranks";
+const resourceURL = "v1/ranks";
 
-const getRankByGenre = async (query, order, limit = 10) => {
-  const rank = `${baseUrl}/genre`;
+const getRankByGenre = async query => {
+  const rank = `${resourceURL}/genre`;
   return await API.get(rank);
 };
 
+const getRankByYear = async query => {
+  const rank = `${resourceURL}/year`;
+  return await API.get(rank);
+};
+
+const rankURL = resource => {
+  return `${API.URL()}/${resourceURL}/${resource}`;
+};
+
 export default {
-  getRankByGenre
+  rankURL,
+  getRankByGenre,
+  getRankByYear
 };

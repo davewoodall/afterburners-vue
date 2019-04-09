@@ -4,10 +4,9 @@
       <section class="level">
         <nav id="nav" class="left nav-links">
           <router-link class="a" to="/">Home</router-link>
-          <router-link class="a" id="log" to="/log">Genres</router-link>
+          <router-link class="a" id="log" to="/rank">Rankings</router-link>
         </nav>
         <section class="right theme-controls">
-          <ff-counters />
           <aside class="theme-controls">
             <span class="mode theme">
               <span class="p nav-p">Mode</span>
@@ -44,9 +43,7 @@
   </section>
 </template>
 <script>
-import ffCounters from "@/components/log/Counters";
 export default {
-  components: { ffCounters },
   data() {
     return {
       style: {
